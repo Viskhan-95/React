@@ -1,0 +1,9 @@
+.subtitle {
+    color: #8E95A9;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.subtitleCustom {
+    font-size: inherit;
+}
