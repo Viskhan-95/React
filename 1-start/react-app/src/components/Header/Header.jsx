@@ -1,10 +1,10 @@
 import HeaderNav from '../HeaderNav/HeaderNav';
 import Logo from '../Logo/Logo';
-import './Header.css';
+import styles from './Header.module.css';
 
 function Header() {
     return (
-        <div className='header'>
+        <div className={styles.header}>
             <Logo image={'./logo.svg'}/>
             <HeaderNav />
         </div>

@@ -1,4 +1,4 @@
-import './Input.css'
+import styles from './Input.module.css'
 
 function Input({placeholder, image, padd}) {
     const padding = {
@@ -6,8 +6,8 @@ function Input({placeholder, image, padd}) {
     }
     return (
         <>
-            {image ? <img className='find-icon' src={image} alt='Иконка поиска' /> : ''}
-            <input className='input' placeholder={placeholder} style={padding}/>
+            {image ? <img className={styles.findIcon} src={image} alt='Иконка поиска' /> : ''}
+            <input className={styles.input} placeholder={placeholder} style={padding}/>
         </>
     );
 }

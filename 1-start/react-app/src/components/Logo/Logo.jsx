@@ -1,8 +1,8 @@
-import './Logo.css'
+import styles from './Logo.module.css'
 
 function Logo({ image }) {
     return (
-        <img className='logo' src={image} alt='Логотип' />
+        <img className={styles.logo} src={image} alt='Логотип' />
     );
 }
 

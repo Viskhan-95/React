@@ -1,8 +1,8 @@
-import './FindBlock.css';
+import styles from './FindBlock.module.css';
 
 function FindBlock({ children }) {
     return (
-        <div className='find-block'>
+        <div className={styles.findBlock}>
             {children}
         </div>
     );
