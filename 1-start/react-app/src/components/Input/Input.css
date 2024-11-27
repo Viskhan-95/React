@@ -1,0 +1,21 @@
+.input {
+    width: 350px;
+    height: 64px;
+    border: 1px solid #323B54;
+    border-radius: 12px;
+    background: #0000001A;
+    color: #FFFFFF;
+    margin-right: 48px;
+    padding-left: 16px;
+    position: relative;
+    font-size: 18px;
+}
+
+.input::placeholder {
+    color: #475069;
+}
+
+.find-icon {
+    position: absolute;
+    margin: 20px 16px;
+}
