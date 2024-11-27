@@ -1,0 +1,23 @@
+#root {
+  max-width: 1240px;
+  min-width: 340px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+  #root {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0 5px;
+  }
+}
