@@ -2,12 +2,12 @@ import HeaderNav from '../HeaderNav/HeaderNav';
 import Logo from '../Logo/Logo';
 import styles from './Header.module.css';
 
-function Header() {
+function Header({state, dispatch}) {
     return (
-        <div className={styles.header}>
+        <header className={styles.header}>
             <Logo image={'./logo.svg'}/>
-            <HeaderNav />
-        </div>
+            <HeaderNav state={state} dispatch={dispatch}/>
+        </header>
     );
 }
 

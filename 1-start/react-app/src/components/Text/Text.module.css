@@ -1,0 +1,20 @@
+.title {
+    color: #EBEEF5;
+    font-size: 64px;
+    margin: 0;
+    padding: 0;
+}
+
+.titleCustom {
+    font-size: inherit;
+}
+
+.subtitle {
+    color: #8E95A9;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.subtitleCustom {
+    font-size: inherit;
+}

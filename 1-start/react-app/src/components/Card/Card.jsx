@@ -1,21 +1,23 @@
+import { useState } from 'react';
+import Rating from '../Rating/Rating';
+import Text from '../Text/Text';
 import styles from './Card.module.css'
+import Favorite from '../Favorite/Favorite';
 
 function Card({name, rating, image}) {
+    const [isFavorite, setIsFavorite] = useState(false);
+
     return (
         <div className={styles.card}>
-            <div className={styles.card__body}>
-                <div className={styles.card__rating}>
-                    <img src='./rating.svg' alt='Иконка рейтинга' />
-                    <h4 className={styles.card__rating_text}>{rating}</h4>
-                </div>
-                <img src= {`./images/${image}`} alt="Фото фильма" />
-            </div>
+            <Rating rating={rating}/>
+            <img src= {`./images/${image}`} alt="Фото фильма" />
             <div className={styles.card__footer}>
-                <h3 className={styles.card__title}>{name}</h3>
-                <button className={styles.card__button_favorite}>
-                    <img src="favorite.svg" alt="Иконка класс" />
-                    В избранное
-                </button>
+                <Text title={name} titleSize='16px'/>
+                {isFavorite ? 
+                    <Favorite image={'./delFavorite.svg'} text='В избранном' color={'#37D8A7'} setIsFavorite={setIsFavorite} isFavorite={isFavorite}/> :
+                    <Favorite image={'./addFavorite.svg'} text='В избранное' color={'#7B6EF6'}setIsFavorite={setIsFavorite} isFavorite={isFavorite} />
+                    
+                }
             </div>
             
         </div>

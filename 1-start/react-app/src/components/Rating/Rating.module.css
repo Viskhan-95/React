@@ -1,0 +1,13 @@
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    height: 32px;
+    margin: 8px;
+    padding: 0 8px;
+    background: #000000A6;
+    color: #FFAD49;
+    border-radius: 8px;
+    position: absolute;
+}
+

@@ -1,13 +1,13 @@
 import styles from './Input.module.css'
 
-function Input({placeholder, image, padd}) {
+function Input({placeholder, image, padd, onChange}) {
     const padding = {
         paddingLeft: padd
     }
     return (
         <>
             {image ? <img className={styles.findIcon} src={image} alt='Иконка поиска' /> : ''}
-            <input className={styles.input} placeholder={placeholder} style={padding}/>
+            <input className={styles.input} onChange={onChange} placeholder={placeholder} style={padding}/>
         </>
     );
 }
